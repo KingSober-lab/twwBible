@@ -3,25 +3,35 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  @font-face {
+    font-family: "Droid Sans";
+    src: url("/fonts/DroidSans/DroidSans-Regular.ttf") format("truetype");
+    font-weight: 400;
   }
-}
+  .custom-range {
+    background: #ddd;
+    height: 6px;
+    border-radius: 5px;
+  }
+  /* below for slider style */
+  .custom-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    background: #673ab7;
+    border-radius: 50%;
+    cursor: pointer;
+  }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
+  .custom-range::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
+    background: #673ab7;
+    border-radius: 50%;
+    cursor: pointer;
+  }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  body {
   }
 }
