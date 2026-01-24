@@ -154,7 +154,13 @@ function Footer() {
               </span>
               <h1 className="pl-3 text-2xl text-[#FFFFFF]">TWW Bible App</h1>
             </div>
-            <Image src="/app.PNG" className="rounded" width={100} height={50} />
+            <Image
+              alt="The Working Word Ministry logo"
+              src="/app.PNG"
+              className="rounded"
+              width={100}
+              height={50}
+            />
           </div>
         </div>
       </div>

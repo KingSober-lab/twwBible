@@ -15,7 +15,7 @@ function Navigation() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex  justify-items-end items-center   font-bold">
-            <Image src="/logo.png " width={100} height={100} />
+            <Image alt="logo" src="/logo.png " width={100} height={100} />
             <p className="  p-[3.5rem]">TWW Bible</p>
           </div>
 
