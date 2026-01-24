@@ -6,6 +6,7 @@ export default function Page() {
       <div className=" p-[4rem]">
         <div className="flex justify-center">
           <Image
+            alt="picture"
             width={250}
             height={200}
             src="/me.jpg"
@@ -14,16 +15,16 @@ export default function Page() {
           />
         </div>
         <div className="text-center mb-5 italic">
-          Sir Sober-The Lord's Servant
+          Sir Sober-The Lord&apos;s Servant
         </div>
         <div className="text-justify space-y-4">
           <p>
             The Working Word Ministry TV is a faith-based ministry dedicated to
             spreading the life-transforming truth of God’s Word through the
-            power of the Holy Spirit. Founded on the belief that “Your Word is
-            Spirit,” the ministry seeks to bring hope, light, and understanding
-            to people around the world by teaching the uncompromised Word of
-            God.
+            power of the Holy Spirit. Founded on the belief that &apos;Your Word
+            is Spirit,&apos; the ministry seeks to bring hope, light, and
+            understanding to people around the world by teaching the
+            uncompromised Word of God.
           </p>
           <p>
             Through clear, Spirit-led teaching and biblical insights, The

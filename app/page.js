@@ -74,7 +74,7 @@ export default function VerseFinderPage() {
 
     loadVerseText();
     setShow(false);
-  }, [book, chapter, verse]);
+  }, [book, chapter, verse, data, setError, setShow, setVerseText]);
 
   // effect to ensure that when book and chapter change verseText rest and show is falseS changes
 
