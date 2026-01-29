@@ -10,24 +10,36 @@ function Navigation() {
   const { resetAll } = useBibleState();
 
   return (
-    <nav className="bg-[#7b1fa2] text-white">
+    <nav className="bg-[#F4C430] text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex  justify-items-end items-center   font-bold">
-            <Image alt="logo" src="/logo.png " width={100} height={100} />
+            <Link onClick={resetAll} href="/">
+              <Image alt="logo" src="/logo.png " width={100} height={100} />
+            </Link>
             <p className="  p-[3.5rem]">TWW Bible</p>
           </div>
 
           {/*Desktop Links */}
           <div className="hidden md:flex space-x-6">
-            <Link href="/" className="hover:text-gray-200" onClick={resetAll}>
+            <Link
+              href="/"
+              className=" px-3 rounded-sm focus:bg-[#F4D98A] hover:text-gray-200"
+              onClick={resetAll}
+            >
               Home
             </Link>
-            <Link href="/about" className="hover:text-gray-200">
+            <Link
+              href="/about"
+              className="px-3 rounded-sm focus:bg-[#F4D98A] hover:text-gray-200"
+            >
               About
             </Link>
-            <Link href="/contact" className="hover:text-gray-200">
+            <Link
+              href="/contact"
+              className=" px-3 rounded-sm focus:bg-[#F4D98A] hover:text-gray-200"
+            >
               Contact
             </Link>
           </div>
@@ -47,12 +59,8 @@ function Navigation() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className=" md:hidden bg-[#4a148c]">
-          <Link
-            onClick={resetAll}
-            href="/"
-            className="block px-4 py-2 focus:bg-[#9575CD]"
-          >
+        <div className=" md:hidden bg-[#9575CD]">
+          <Link onClick={resetAll} href="/" className="block px-4 py-2">
             Home
           </Link>
           <Link href="/about" className="block px-4 py-2 focus:bg-[#9575CD]">

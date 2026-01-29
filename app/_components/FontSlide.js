@@ -7,7 +7,7 @@ export default function FontSlider({ fontSize, setFontSize }) {
         <label className="font-semibold">Font Size: {fontSize}</label>
         <input
           type="range"
-          min="20"
+          min="16"
           max="40"
           value={fontSize}
           onChange={(e) => setFontSize(e.target.value)}

@@ -17,7 +17,7 @@ export default function Page() {
         <div className="text-center mb-5 italic">
           Sir Sober-The Lord&apos;s Servant
         </div>
-        <div className="text-justify space-y-4">
+        <div className="lg:px-[10rem] text-justify space-y-5">
           <p>
             The Working Word Ministry TV is a faith-based ministry dedicated to
             spreading the life-transforming truth of God’s Word through the

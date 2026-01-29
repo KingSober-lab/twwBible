@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import italicizeInsideParentheses from "./TextFormat";
+import LoadingSpinner from "./Spinner";
 
 export default function ChapterReader({ book, chapter }) {
   const [verses, setVerses] = useState([]);
@@ -16,7 +17,7 @@ export default function ChapterReader({ book, chapter }) {
       .finally(() => setLoading(false));
   }, [book, chapter]);
 
-  if (loading) return <p>Loading...</p>;
+  if (loading) return <LoadingSpinner size={50} />;
   if (!verses) return <p>Verse data not found.</p>;
 
   return (

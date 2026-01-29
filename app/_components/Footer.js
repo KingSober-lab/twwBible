@@ -15,7 +15,7 @@ function Footer() {
   const currYear = toDay.getFullYear();
   console.log(currYear);
   return (
-    <div className="   bg-[#7b1fa2]">
+    <div className="  bg-[#F4C430]">
       <div className=" pb-5 lg:hidden flex pt-[1rem]">
         <div className="w-32 h-[2px] bg-[white] mx-auto my-6"></div>
         <div>
@@ -26,7 +26,7 @@ function Footer() {
               rel="noopener noreferrer"
               className="p-1 hover:scale-110 transition-transform"
             >
-              <FaFacebook className="text-[#e1bee7] hover:text-blue-600 w-5 h-5" />
+              <FaFacebook className="text-[#5B2C83] hover:text-blue-600 w-5 h-5" />
             </Link>
 
             <Link
@@ -35,7 +35,7 @@ function Footer() {
               rel="noopener noreferrer"
               className="p-1 hover:scale-110 transition-transform"
             >
-              <FaYoutube className="text-[#e1bee7] hover:text-red-600 w-5 h-5" />
+              <FaYoutube className="text-[#512da8] hover:text-red-600 w-5 h-5" />
             </Link>
 
             <Link
@@ -44,7 +44,7 @@ function Footer() {
               rel="noopener noreferrer"
               className="p-1 hover:scale-110 transition-transform"
             >
-              <FaTiktok className="text-[#e1bee7] hover:text-black w-5 h-5" />
+              <FaTiktok className=" text-[#5B2C83] hover:text-black w-5 h-5" />
             </Link>
           </div>
 
@@ -64,38 +64,40 @@ function Footer() {
           <div>
             <div className="flex py-4 items-center">
               <span>
-                <IoIosContact className="text-[#F8BBD0] w-8 h-8" />
+                <IoIosContact className="text-[#5B2C83] w-7 h-7" />
               </span>
-              <h1 className="pl-3 text-2xl text-[#FFFFFF]">Contact</h1>
+              <h1 className="pl-3 text-xl text-[#5B2C83]">Contact</h1>
             </div>
             <div className=" pb-2 flex">
               <span>
-                <IoLocationOutline className="text-[#e1bee7] w-6 h-6" />
+                <IoLocationOutline className="text-[#F9FAFB] w-6 h-6" />
               </span>
-              <p className="pl-4 ">Justus Von-Liebig Weg 6a, 18105, Germany</p>
+              <p className="pl-4 text-[#F9FAFB]">
+                Justus Von-Liebig Weg 6a, 18105, Germany
+              </p>
             </div>
 
             <div className="pb-2 flex">
               <span>
-                <FiPhoneCall className="text-[#e1bee7] w-6 h-6" />
+                <FiPhoneCall className="text-[#F9FAFB] w-6 h-6" />
               </span>
-              <p className="pl-4">+49 173 9406448</p>
+              <p className="pl-4 text-[#F9FAFB]">+49 173 9406448</p>
             </div>
 
             <div className="flex">
               <span>
-                <MdOutlineMail className="text-[#e1bee7] w-6 h-6" />
+                <MdOutlineMail className="text-[#F9FAFB] w-6 h-6" />
               </span>
-              <p className="pl-4">mr.appiah@gmx.de</p>
+              <p className="pl-4 text-[#F9FAFB]">mr.appiah@gmx.de</p>
             </div>
           </div>
 
           <div>
             <div className="flex py-4 items-center">
               <span>
-                <IoShareSocialSharp className="text-[#F8BBD0] w-8 h-8" />
+                <IoShareSocialSharp className="text-[#5B2C83]  w-7 h-7" />
               </span>
-              <h1 className="pl-3 text-2xl text-[#FFFFFF]">Social Media</h1>
+              <h1 className="pl-3 text-xl text-[#5B2C83]">Social Media</h1>
             </div>
 
             <Link
@@ -104,8 +106,8 @@ function Footer() {
               rel=""
               className="pb-2 flex hover:scale-110 transition-transform"
             >
-              <FaFacebook className="text-[#e1bee7] hover:text-blue-600 w-6 h-6" />
-              <span className="pl-4">Facebook</span>
+              <FaFacebook className="text-blue-600 hover:text-blue-600 w-6 h-6" />
+              <span className="pl-4 text-[#F9FAFB]">Facebook</span>
             </Link>
 
             <Link
@@ -114,8 +116,8 @@ function Footer() {
               rel=""
               className="pb-2 flex hover:scale-110 transition-transform"
             >
-              <FaYoutube className="text-[#e1bee7] hover:text-red-600 w-6 h-6" />
-              <span className="pl-4">YouTube</span>
+              <FaYoutube className="text-red-600 hover:text-red-600 w-6 h-6" />
+              <span className="pl-4 text-[#F9FAFB]">YouTube</span>
             </Link>
 
             <Link
@@ -124,25 +126,34 @@ function Footer() {
               rel=""
               className="flex hover:scale-110 transition-transform"
             >
-              <FaTiktok className="text-[#e1bee7] hover:text-black w-6 h-6" />
-              <span className="pl-4">Tiktok</span>
+              <FaTiktok className="text-black hover:text-black w-6 h-6" />
+              <span className="pl-4 text-[#F9FAFB]">Tiktok</span>
             </Link>
           </div>
           <div>
             <div className="flex items-center py-4">
               <span>
-                <FaLink className="text-[#F8BBD0] w-8 h-8" />
+                <FaLink className="text-[#5B2C83]  w-7 h-7" />
               </span>
-              <h1 className="pl-3 text-2xl text-[#FFFFFF]">Links</h1>
+              <h1 className="pl-3 text-xl text-[#5B2C83]">Links</h1>
             </div>
             <div className="flex flex-col">
-              <Link href="/" className="pb-2 hover:text-gray-200">
+              <Link
+                href="/"
+                className="pb-2 text-[#F9FAFB] hover:text-gray-200"
+              >
                 Home
               </Link>
-              <Link href="/about" className="pb-2 hover:text-gray-200">
+              <Link
+                href="/about"
+                className="pb-2 text-[#F9FAFB] hover:text-gray-200"
+              >
                 About
               </Link>
-              <Link href="/contact" className="hover:text-gray-200 ">
+              <Link
+                href="/contact"
+                className="text-[#F9FAFB] hover:text-gray-200 "
+              >
                 Contact
               </Link>
             </div>
@@ -150,28 +161,32 @@ function Footer() {
           <div>
             <div className="flex py-4 items-center">
               <span>
-                <FcApproval className="w-10 h-10" />
+                <FcApproval className="w-8 h-8" />
               </span>
-              <h1 className="pl-3 text-2xl text-[#FFFFFF]">TWW Bible App</h1>
+              <h1 className="pl-3 text-xl text-[#F9FAFB]">TWW Bible App</h1>
             </div>
             <Image
-              alt="The Working Word Ministry logo"
-              src="/app.PNG"
+              alt="logo"
+              src="/logo.png"
               className="rounded"
               width={100}
               height={50}
+              placeholder="blur"
+              blurDataURL="/logo.png"
             />
           </div>
         </div>
       </div>
       <div className="lg:mx-[10rem] hidden lg:block">
-        <hr className=" min-w-full border  border-gray-400" />
+        <div className="mx-[5.9rem]">
+          <hr className="w-full  border-gray-300" />
+        </div>
         <div className="flex justify-between px-[9rem] pt-4 pb-8 text-[#ded3f3]">
           <div>
-            <p>CopyRight &copy; {currYear} </p>
+            <p className="text-[#F9FAFB]">CopyRight &copy; {currYear} </p>
           </div>
           <div>
-            <p>
+            <p className="text-[#F9FAFB]">
               Developed by:
               <span className="text-[#f06292]">Emmanuel Appiah</span>
             </p>

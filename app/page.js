@@ -11,26 +11,21 @@ import WelcomeText from "./_components/WelcomeText";
 import TextNavButton from "./_components/TextNavButton";
 
 export default function VerseFinderPage() {
-  const [fontSize, setFontSize] = useState(20); // default size
+  const [fontSize, setFontSize] = useState(16); // default size
   const [search, setIsearch] = useState(false);
   const {
     error,
     setError,
-    version,
-    setVersion,
     books,
-    setBooks,
     data,
     book,
     setBook,
     chapter,
     setChapter,
     chapters,
-    setChapters,
     verse,
     setVerse,
     verses,
-    setVerses,
     verseText,
     setVerseText,
     show,
@@ -241,7 +236,7 @@ export default function VerseFinderPage() {
         {show ? (
           <div
             style={{ fontSize: `${fontSize}px` }}
-            className="md:w-4/5  lg:py-[5rem] py-[2rem] lg:px-[2rem]  md:px-8 rounded-t-lg mt-[3rem] p-[1rem] "
+            className="md:w-4/5  lg:py-[5rem] py-[1.5rem] lg:px-[2rem]  md:px-8 rounded-t-lg mt-[-2rem]  "
           >
             <ChapterReader book={book} chapter={chapter} />
             <TextNavButton
@@ -253,7 +248,7 @@ export default function VerseFinderPage() {
         ) : verseText ? (
           <div
             style={{ fontSize: `${fontSize}px` }}
-            className=" lg:w-4/5 p-[1rem] lg:py-[5rem] py-[2rem] rounded-t-lg mt-[3rem]  lg:px-[2rem]  "
+            className=" lg:w-4/5 p-[1rem] lg:py-[5rem] py-[2rem] rounded-t-lg mt-[0.5rem]  lg:px-[2rem]"
           >
             <div className="w-full bg-white p-8 shadow-lg">
               <strong>
@@ -286,7 +281,7 @@ export default function VerseFinderPage() {
         ) : (
           <div
             style={{ fontSize: `${fontSize}px` }}
-            className="lg:w-4/5 lg:py-[5rem] py-[2rem] lg:px-[2rem]  md:px-8 rounded-t-lg mt-[3rem] p-[1rem]"
+            className="lg:w-4/5 lg:py-[5rem] py-[2rem] lg:px-[2rem]  md:px-8 rounded-t-lg mt-[.5rem] px-1"
           >
             <WelcomeText />
           </div>
