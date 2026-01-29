@@ -19,7 +19,7 @@ function Navigation() {
               <Image
                 alt="logo"
                 src="/logo.png"
-                width={100}
+                width={80}
                 height={50}
                 className=" sm:w-15 md:w-26 lg:w-30 h-auto"
                 placeholder="blur"
