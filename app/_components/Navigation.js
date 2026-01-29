@@ -19,9 +19,9 @@ function Navigation() {
               <Image
                 alt="logo"
                 src="/logo.png"
-                className="rounded"
                 width={100}
                 height={50}
+                className=" sm:w-15 md:w-26 lg:w-30 h-auto"
                 placeholder="blur"
                 blurDataURL="/logo.png"
               />
