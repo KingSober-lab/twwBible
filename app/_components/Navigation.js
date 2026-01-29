@@ -16,7 +16,15 @@ function Navigation() {
           {/* Logo */}
           <div className="flex  justify-items-end items-center   font-bold">
             <Link onClick={resetAll} href="/">
-              <Image alt="logo" src="/logo.png " width={100} height={100} />
+              <Image
+                alt="logo"
+                src="/logo.png"
+                className="rounded"
+                width={100}
+                height={50}
+                placeholder="blur"
+                blurDataURL="/logo.png"
+              />
             </Link>
             <p className="  p-[3.5rem]">TWW Bible</p>
           </div>
