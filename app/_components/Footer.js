@@ -35,7 +35,7 @@ function Footer() {
               rel="noopener noreferrer"
               className="p-1 hover:scale-110 transition-transform"
             >
-              <FaYoutube className="text-[#512da8] hover:text-red-600 w-5 h-5" />
+              <FaYoutube className="text-[#5B2C83] hover:text-red-600 w-5 h-5" />
             </Link>
 
             <Link

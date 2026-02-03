@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Page() {
   return (
     <div>
-      <div className=" p-[4rem]">
+      <div className=" px-5 pb-10 pt-10 md:p-[4rem]">
         <div className="flex justify-center">
           <Image
             alt="picture"
